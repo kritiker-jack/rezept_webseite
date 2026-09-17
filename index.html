@@ -149,13 +149,13 @@
       <!-- Categories & Meat Filters -->
       <div class="flex items-center gap-2 pt-1 overflow-x-auto no-scrollbar pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap">
         <button onclick="setCategory('alle')" data-cat="alle" class="filter-btn px-4 py-2 rounded-lg text-xs font-bold border transition-all duration-150 bg-amber-500 text-black border-amber-500 shadow-sm ring-2 ring-amber-500/20">
-          Alle (76)
+          Alle (77)
         </button>
         <button onclick="setCategory('reis')" data-cat="reis" class="filter-btn px-4 py-2 rounded-lg text-xs font-medium border transition-all duration-150 bg-[var(--card)] border-[var(--border)] text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:border-[var(--foreground)]">
           Reis (21)
         </button>
         <button onclick="setCategory('nudeln')" data-cat="nudeln" class="filter-btn px-4 py-2 rounded-lg text-xs font-medium border transition-all duration-150 bg-[var(--card)] border-[var(--border)] text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:border-[var(--foreground)]">
-          Nudeln (16)
+          Nudeln (17)
         </button>
         <button onclick="setCategory('kartoffeln')" data-cat="kartoffeln" class="filter-btn px-4 py-2 rounded-lg text-xs font-medium border transition-all duration-150 bg-[var(--card)] border-[var(--border)] text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:border-[var(--foreground)]">
           Kartoffeln (15)
@@ -184,7 +184,7 @@
       <div class="flex items-center justify-between text-xs px-1 pt-1 text-[var(--muted-foreground)]">
         <div class="flex items-center gap-1.5">
           <span class="w-2 h-2 rounded-full bg-amber-500 inline-block"></span>
-          <span>Aktive Auswahl: <strong id="filter-status-text" class="text-[var(--foreground)] font-semibold">Alle Rezepte</strong> (<span id="filter-count">76</span> Gerichte)</span>
+          <span>Aktive Auswahl: <strong id="filter-status-text" class="text-[var(--foreground)] font-semibold">Alle Rezepte</strong> (<span id="filter-count">77</span> Gerichte)</span>
         </div>
         <button id="reset-filter-link" onclick="resetAllFilters()" class="hidden text-xs text-amber-500 hover:underline font-medium">
           Filter zurücksetzen
@@ -5641,6 +5641,81 @@
     "alternatives": [
       "Fleisch: Geflügelschinken oder gebratene Hähnchenstreifen.",
       "Basis: Fladenbrot oder Tortillas statt Baguette."
+    ]
+  },
+  {
+    "id": "spaghetti-all-assassina",
+    "title": "Spaghetti all’Assassina",
+    "image": "images/Spaghetti all’assassina.jpg",
+    "category": "nudeln",
+    "meat": null,
+    "time": "25 Min",
+    "kcalPerPortion": 520,
+    "teaser": "Der knusprig-würzige Nudelklassiker aus Bari: Rohe Spaghetti werden in feurigem Knoblauch-Tomatensud in der Pfanne angebraten und wie Risotto geschwenkt, bis sie herrlich karamellisieren.",
+    "ingredientGroups": [
+      {
+        "name": "Pasta & Pfannenbasis",
+        "items": [
+          {
+            "base": 100,
+            "unit": "g",
+            "name": "Spaghetti (roh)"
+          },
+          {
+            "base": 15,
+            "unit": "ml",
+            "name": "Olivenöl (zum scharfen Anbraten)"
+          },
+          {
+            "base": 1,
+            "unit": "Zehe(n)",
+            "name": "Knoblauch (fein gehackt)"
+          },
+          {
+            "base": 1,
+            "unit": "TL",
+            "name": "Chiliflocken / Peperoncino"
+          }
+        ]
+      },
+      {
+        "name": "Tomaten-Sugo & Kochsud",
+        "items": [
+          {
+            "base": 120,
+            "unit": "g",
+            "name": "passierte Tomaten (fein & stückfrei)"
+          },
+          {
+            "base": 15,
+            "unit": "g",
+            "name": "Tomatenmark"
+          },
+          {
+            "base": 250,
+            "unit": "ml",
+            "name": "Gemüsebrühe (heiß)"
+          },
+          {
+            "base": 1,
+            "unit": "Prise",
+            "name": "Salz & Prise Zucker"
+          }
+        ]
+      }
+    ],
+    "steps": [
+      "In einem kleinen Topf die heiße Gemüsebrühe mit der Hälfte der passierten Tomaten und 1 TL Tomatenmark verrühren und sanft köchelnd bereithalten (wird als Kochsud verwendet).",
+      "In einer breiten, schweren Pfanne reichlich Olivenöl erhitzen. Knoblauch und Chiliflocken kurz anschwitzen, bis sie herrlich duften (Knoblauch nicht braun werden lassen).",
+      "Das restliche Tomatenmark und die übrigen passierten Tomaten einrühren. Die rohen Spaghetti flach nebeneinander in die Pfanne legen.",
+      "Die Spaghetti in der Tomatensauce brutzeln lassen, bis die Unterseite leicht anröstet und dunkelrot karamellisiert (aromatische Röstaromen, nicht rabenschwarz).",
+      "Nun wie bei einem Risotto schöpfkellenweise den heißen Kochsud angießen. Wenn die Flüssigkeit aufgesaugt ist, vorsichtig wenden und erneut leicht anbraten.",
+      "Vorgang 10–12 Minuten wiederholen, bis die Spaghetti bissfest al dente und rundum von aromatischer Kruste ummantelt sind. Heiß servieren (optional mit Burrata/Stracciatella als milder Kontrast)."
+    ],
+    "alternatives": [
+      "Schärfe: Für milden Geschmack die Chilimenge reduzieren oder Chilis erst am Teller über die Portion streuen.",
+      "Topping: Frische Burrata, Stracciatella oder etwas Parmesan als milder, cremiger Gegenpol zur Schärfe.",
+      "Fleisch: Wer mag, kann anfangs etwas gewürfelte Salsiccia oder Bacon mit anbraten."
     ]
   }
 ];
