@@ -5883,8 +5883,7 @@
       } else {
         clearBtn.classList.add('hidden');
       }
-      
-    renderRecipes();
+      renderRecipes();
     }
 
     function clearSearch() {
@@ -5947,27 +5946,6 @@
     });
 
     renderRecipes();
-  
-    // Touch Swipe Gestures for Mobile (iPad / iPhone)
-    let touchStartX = 0;
-    let touchStartY = 0;
-    const detailEl = document.getElementById('view-detail');
-    if (detailEl) {
-      detailEl.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-        touchStartY = e.changedTouches[0].screenY;
-      }, { passive: true });
-      detailEl.addEventListener('touchend', (e) => {
-        const diffX = e.changedTouches[0].screenX - touchStartX;
-        const diffY = e.changedTouches[0].screenY - touchStartY;
-        if (Math.abs(diffX) > 60 && Math.abs(diffX) > Math.abs(diffY) * 1.5) {
-          if (diffX < 0) navigateRecipe(1);
-          else navigateRecipe(-1);
-        }
-      }, { passive: true });
-    }
-  
-    
-    </script>
+  </script>
 </body>
 </html>
